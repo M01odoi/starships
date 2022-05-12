@@ -1,0 +1,62 @@
+.people-ships-page {
+  height: 100vh;
+  background: #de8cb1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 100px;
+  }
+
+  h2 {
+    text-align: center;
+    color: white;
+  }
+
+  ul {
+    width: 60%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    li {
+      border-radius: 15px;
+      background: black;
+      box-shadow: 30px -30px 10px rgba(0, 0, 0, 0.4);
+      width: 40%;
+      border: 2px solid black;
+    }
+  }
+
+  section {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    background: #ffffff;
+
+    .big-size-number {
+      font-size: 70px;
+    }
+  }
+
+  section:hover {
+    position: relative;
+    z-index: 20;
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+}

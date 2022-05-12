@@ -1,0 +1,113 @@
+
+.sign-in-page{
+  background: #ff9f2f !important;
+}
+.sign-up-page {
+  background: #02a3a9;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .shadow {
+    position: relative;
+  }
+
+  .shadow:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.4), transparent);
+    transform: rotate(-51deg);
+    -webkit-transform: rotate(-51deg);
+    -moz-transform: rotate(-51deg);
+    -o-transform: rotate(-51deg);
+    -ms-transform: rotate(-51deg);
+    //width: 475px;
+    width: 156%;
+    height: 103%;
+    //height: 380px;
+    right: -76%;
+    //right: -230px;
+    top: 31%;
+    //top: 113px;
+  }
+
+  .sign-up-window {
+    width: 305px;
+    height: 370px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .sign-up-image {
+      position: absolute;
+      border-radius: 50%;
+      background: yellow;
+      padding: 26px;
+      top: -50px;
+      //bottom: 90%;
+      left: 100px;
+      box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
+      //left: ;
+      .sign-up-image-icon {
+        color: white;
+        filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.4));
+        //filter: dropShadow(10px 10px 10px black);
+      }
+    }
+
+
+
+    form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      height: 180px;
+
+      input {
+        width: 250px;
+        padding: 10px 5px;
+        background: #d3d3d3;
+        border: none;
+        text-align: center;
+        font-size: 14px;
+      }
+      .dontCorrectValidate{
+        border: 2px solid red;
+      }
+      .sign-up-button{
+        width: 264px;
+        padding: 10px 0;
+        background: #0380e3;
+        color: white;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      .sign-up-button:active{
+        background: #0574cc;
+      }
+    }
+
+    h1 {
+      font-weight: normal;
+      font-size: 2rem;
+      color: #8d8d8d;
+    }
+    .sign-up-hint{
+      color:red;
+      font-size: 12px;
+      margin-top: 20px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}

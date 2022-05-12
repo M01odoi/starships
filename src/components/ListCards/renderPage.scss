@@ -1,0 +1,156 @@
+.renderPage {
+  height: 100vh;
+  background: #88a179;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    ul {
+      list-style: none;
+      width: 62%;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+
+      button {
+        border: none;
+        background: none;
+      }
+
+      .activeVersion {
+        color: green;
+      }
+
+      .passiveVersion {
+        color: black;
+      }
+    }
+
+    li:last-child {
+      margin-left: 30px;
+    }
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .card-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .list-selection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 60vh;
+  }
+
+
+  .cardsVersion {
+    height: 60vh;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    li:hover {
+      color: #184212;
+    }
+    li {
+      padding: 20px;
+      background: white;
+      box-shadow: 10px 10px 40px black;
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      height: 150px;
+      width: 150px;
+      margin: 5px 1.5%;
+      cursor: pointer;
+
+      p {
+        text-align: center;
+
+        font-weight: bolder;
+        margin: 0;
+      }
+
+
+
+      .card-wrapper-img {
+        width: 80%;
+        height: 80%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .listVersion {
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    height: 100%;
+
+    li {
+      text-align: center;
+
+      width: 300px;
+      font-weight: bolder;
+      font-size: 20px;
+
+      p {
+        text-align: center;
+        margin: 0;
+        cursor: pointer;
+      }
+
+      p:hover {
+        color: #184212;
+      }
+    }
+  }
+
+  .list-wrapper-img {
+    width: 370px;
+    height: 370px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
