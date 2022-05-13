@@ -1,5 +1,4 @@
-
-.sign-in-page{
+.sign-in-page {
   background: #ff9f2f !important;
 }
 .sign-up-page {
@@ -62,8 +61,6 @@
       }
     }
 
-
-
     form {
       display: flex;
       justify-content: space-between;
@@ -79,10 +76,10 @@
         text-align: center;
         font-size: 14px;
       }
-      .dontCorrectValidate{
+      .dontCorrectValidate {
         border: 2px solid red;
       }
-      .sign-up-button{
+      .sign-up-button {
         width: 264px;
         padding: 10px 0;
         background: #0380e3;
@@ -92,7 +89,7 @@
         cursor: pointer;
         text-transform: uppercase;
       }
-      .sign-up-button:active{
+      .sign-up-button:active {
         background: #0574cc;
       }
     }
@@ -102,8 +99,8 @@
       font-size: 2rem;
       color: #8d8d8d;
     }
-    .sign-up-hint{
-      color:red;
+    .sign-up-hint {
+      color: red;
       font-size: 12px;
       margin-top: 20px;
       text-decoration: none;

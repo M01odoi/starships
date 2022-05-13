@@ -1,8 +1,8 @@
-import {IResultsStarships} from "./IResultsStarships";
+import { IResultsStarships } from "./IResultsStarships";
 
 export interface IStarships {
-    count: number;
-    next: string;
-    previous?: any;
-    results: IResultsStarships[];
+  count: number;
+  next: string;
+  previous?: any;
+  results: IResultsStarships[];
 }
