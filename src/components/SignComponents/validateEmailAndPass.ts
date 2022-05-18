@@ -49,7 +49,7 @@ export const validateEmailAndPass: Function = ({
                                                    accParams,
                                                }: ValidateRegData): boolean => {
     let isValid: boolean = true;
-    fields.forEach((obj, index, array) => {
+    fields.forEach((obj) => {
         const a: string = Object.keys(accParams).filter((key) => key === obj.id)[0];
         if (obj.id === a) {
             obj.validations.filter(
