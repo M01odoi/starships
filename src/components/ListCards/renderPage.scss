@@ -33,10 +33,12 @@
 
       .activeColor {
         color: green;
+        cursor: pointer;
       }
 
       .passiveColor {
         color: black;
+        cursor: pointer;
       }
     }
 
@@ -76,6 +78,13 @@
 
     li:hover {
       color: #184212;
+      background: rgba(24, 66, 18, 0.3);
+      outline: 2px solid #184212;
+
+      .card-wrapper-img {
+        width: 85%;
+        height: 85%;
+      }
     }
 
     li {
@@ -112,7 +121,6 @@
   }
 
   .listVersion {
-    width: 30%;
     margin: 0;
     padding: 0;
     list-style: none;
