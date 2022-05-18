@@ -25,7 +25,7 @@ const FormBuilder: React.FC<Props> = ({
   onSubmit,
 }): JSX.Element => {
   const [accParams, setAccParams] = useState(() => initFields(fields));
-  const [isValid, setIsValid] = useState(false);
+  const [isValid, setIsValid] = useState(true);
 
   const onSubmitForm = (e: any) => {
     e.preventDefault();

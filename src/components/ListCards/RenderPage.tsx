@@ -45,7 +45,7 @@ const RenderPage: React.FC<Props> = ({ array, title }): JSX.Element => {
         <ul>
           <li>
             <button
-              className={isSquare ? "activeVersion" : "passiveVersion"}
+              className={isSquare ? "activeColor" : "passiveColor"}
               onClick={() => dispatch(setIsSquare(true))}
             >
               <FontAwesomeIcon icon="square" className="fa-3x" />
@@ -53,7 +53,7 @@ const RenderPage: React.FC<Props> = ({ array, title }): JSX.Element => {
           </li>
           <li>
             <button
-              className={isSquare ? "passiveVersion" : "activeVersion"}
+              className={isSquare ? "passiveColor" : "activeColor"}
               onClick={() => dispatch(setIsSquare(false))}
             >
               <FontAwesomeIcon icon="list" className="fa-3x" />

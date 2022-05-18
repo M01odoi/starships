@@ -14,6 +14,7 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+
     ul {
       display: flex;
       justify-content: space-between;
@@ -22,10 +23,12 @@
       list-style: none;
       width: 804px;
     }
+
     li {
       display: flex;
       justify-content: center;
     }
+
     .info-card-back-button {
       background: none;
       border: none;
@@ -70,6 +73,8 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      padding: 0;
+
       li {
         background: white;
         padding: 10px;
