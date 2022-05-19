@@ -1,13 +1,13 @@
 import React from "react";
 import "../sign.scss";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FormBuilder from "../FormBuilder";
-import {registerFormConfig} from "../fields";
-import {useNavigate} from "react-router-dom";
-import {peopleAndStarshipsCards, signIn} from "../../../routes";
-import {addAccount} from "../../../store/reducers/accInfoSlice";
-import {useAppDispatch} from "../../../hooks/redux";
-import {setAuthAcc} from "../../../store/reducers/helpfulStateSlice";
+import { registerFormConfig } from "../fields";
+import { useNavigate } from "react-router-dom";
+import { peopleAndStarshipsCards, signIn } from "../../../routes";
+import { addAccount } from "../../../store/reducers/accInfoSlice";
+import { useAppDispatch } from "../../../hooks/redux";
+import { setAuthAcc } from "../../../store/reducers/helpfulStateSlice";
 
 export interface IAccParams {
   log: string;
