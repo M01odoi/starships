@@ -1,5 +1,5 @@
 export interface IValidation {
-    type: "maxLength" | "minLength" | "theSameAs" | "email" | "login" | "isEmailUnique";
+    type: "maxLength" | "minLength" | "theSameAs" | "email" | "accExists" | "isEmailUnique";
     validValue?: string | number | RegExp;
 }
 
@@ -23,7 +23,7 @@ export const loginFormConfig: IFormConfig[] = [
                 validValue: 3,
             },
             {
-                type: "login",
+                type: "accExists",
                 validValue: "password",
             },
         ],

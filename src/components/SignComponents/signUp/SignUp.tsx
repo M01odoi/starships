@@ -1,13 +1,13 @@
 import React from "react";
 import "../sign.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import FormBuilder from "../FormBuilder";
-import { registerFormConfig } from "../fields";
-import { useNavigate } from "react-router-dom";
-import { peopleAndStarshipsCards, signIn } from "../../../routes";
-import { addAccount } from "../../../store/reducers/accInfoSlice";
-import { useAppDispatch } from "../../../hooks/redux";
-import { setIsAuth } from "../../../store/reducers/helpfulStateSlice";
+import {registerFormConfig} from "../fields";
+import {useNavigate} from "react-router-dom";
+import {peopleAndStarshipsCards, signIn} from "../../../routes";
+import {addAccount} from "../../../store/reducers/accInfoSlice";
+import {useAppDispatch} from "../../../hooks/redux";
+import {setAuthAcc} from "../../../store/reducers/helpfulStateSlice";
 
 export interface IAccParams {
   log: string;
@@ -19,7 +19,7 @@ const SignUp: React.FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
   const onSubmit = (data: IAccParams) => {
     dispatch(addAccount({ login: data.log, password: data.pass }));
-    dispatch(setIsAuth(true));
+    dispatch(setAuthAcc({ login: data.log, password: data.pass }));
     navigate(peopleAndStarshipsCards);
   };
   return (

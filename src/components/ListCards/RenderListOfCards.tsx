@@ -9,6 +9,8 @@ const RenderListOfCards: React.FC<IResultPeopleStarships> = ({array, title}): JS
     const {arrayImage, isSquare} = useAppSelector(
         (state) => state.helpfulState
     );
+    const { people,starships } = useAppSelector((state) => state.peopleAndStarships);
+
     const navigate = useNavigate();
 
     const arrayOfElems = array?.map((elem) => (

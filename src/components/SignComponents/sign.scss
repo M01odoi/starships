@@ -1,6 +1,7 @@
 .sign-in-page {
   background: #ff9f2f !important;
 }
+
 .sign-up-page {
   background: #02a3a9;
   position: relative;
@@ -66,22 +67,33 @@
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
-      height: 180px;
+      //height: 180px;
 
       input {
         width: 250px;
         padding: 10px 5px;
+        margin-top: 10px;
         background: #d3d3d3;
         border: none;
         text-align: center;
         font-size: 14px;
       }
+
+      span {
+        font-size: 12px;
+        color: red;
+        margin-top: 3px;
+        margin-bottom: -5px;
+      }
+
       .dontCorrectValidate {
         border: 2px solid red;
       }
+
       .sign-up-button {
         width: 264px;
         padding: 10px 0;
+        margin-top: 10px;
         background: #0380e3;
         color: white;
         border: none;
@@ -89,20 +101,23 @@
         cursor: pointer;
         text-transform: uppercase;
       }
+
       .sign-up-button:active {
         background: #0574cc;
       }
     }
 
     h1 {
+      margin: 50px 0 0 0;
       font-weight: normal;
       font-size: 2rem;
       color: #8d8d8d;
     }
+
     .sign-up-hint {
       color: red;
+      //margin-top: 10px;
       font-size: 12px;
-      margin-top: 20px;
       text-decoration: none;
       cursor: pointer;
     }
